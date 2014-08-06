@@ -45,11 +45,13 @@ h3 {
 	font-family: Georgia,serif;
 	text-align: center;
 	color: navy;
+	
 }
 
 h4 {
 	text-transform: uppercase;
 }
+
 
 .lead {
 	font-size: 20px;
