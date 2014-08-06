@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template</title>
+	<meta name="author" content="Author Name">
+	<meta name="description" content="Sentence here about the site and stuff so it goes wherever it needs to.">
+	<meta name="keywords" content="first thing, second, third thing here">
+	
+	<!-- Fonts -->
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+  <body>
+	<!-- HEADER SECTION -->
+	<div class="container">
+			<h1>Piracy In Australia</h1>
+			<p>Are the most pirated films and shows available legally for Australians?</p>
+			<br>
+			<br>
+	</div>
+	<!-- CHART SECTION -->
+	<div class="container">
+			<p>Do people turn to piracy when the movies they want to watch are not available legally? We're building a dataset to help answer that question. Here are last week's most-pirated movies and their availability:</p>
+			<br>
+			<br>
+			<html>
+			  <head>
+			    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+			    <script type='text/javascript'>
+			      google.load('visualization', '1', {packages:['table']});
+			      google.setOnLoadCallback(drawTable);
+			      function drawTable() {
+			        var data = new google.visualization.DataTable();
+			        data.addColumn('string', 'Name');
+			        data.addColumn('boolean', 'Streaming');
+					data.addColumn('boolean', 'Digital Rental');
+					data.addColumn('boolean', 'Digital Purchase');
+			        data.addRows([
+			          ['Prisoners', false, false, false],
+			          ['Percy Jackson: Sea of Monsters', false, false, false],
+			          ['Elysium', false, false, false],
+			          ['The Wolverine', false, false, true],
+					  ['Drinking Buddies', false, false, true],
+					  ['2 Guns', false, false, true],
+					  ['Frozen', true, true, true],
+					  ['Machete Kills', false, false, true],
+					  ['Thor: The Dark World', false, true, false],
+					  ['Red 2', false, false, false]
+			        ]);
+
+			        var table = new google.visualization.Table(document.getElementById('table_div'));
+			        table.draw(data, {showRowNumber: true});
+			      }
+			    </script>
+			  </head>
+			  
+
+			  <body>
+			    <div id='table_div'></div>
+			  </body>
+			</html>
+			<p class="small"><br>Week ending Nov 25, 2013. Source: <a href="http://torrentfreak.com">TorrentFreak</a> and <a href="http://efa.org">EFA</a></p>
+			<br>
+			<br>
+			
+	</div>
+	<!-- FIGURES SECTION -->
+	<div class="container">
+		<h4>Over the past 8 weeks, only <b>43%</b> of the most-pirated movies have been available legally in some digital form.</h4>
+		<h4>Over the same period, only <b>21%</b> have been available for rental or streaming.</h4>
+		<h4>In addition, only <b>1%</b> have been available on a legal streaming service.</h4>
+	</div>
+	
+	<!-- GRAPH SECTION -->
+	
+	<div class="container">
+		<head>
+		    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		    <title>
+		      Google Visualization API Sample
+		    </title>
+		    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		    <script type="text/javascript">
+		      google.load('visualization', '1', {packages: ['corechart']});
+		    </script>
+		    <script type="text/javascript">
+		      function drawVisualization() {
+		        // Some raw data (not necessarily accurate)
+		        var data = google.visualization.arrayToDataTable([
+		          ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'],
+		          ['2004/05',  165,      938,         522,             998,           450,      614.6],
+		          ['2005/06',  135,      1120,        599,             1268,          288,      682],
+		          ['2006/07',  157,      1167,        587,             807,           397,      623],
+		          ['2007/08',  139,      1110,        615,             968,           215,      609.4],
+		          ['2008/09',  136,      691,         629,             1026,          366,      569.6]
+		        ]);
+
+		        var options = {
+		          title : 'Monthly Coffee Production by Country',
+		          vAxis: {title: "Cups"},
+		          hAxis: {title: "Month"},
+		          seriesType: "bars",
+		          series: {5: {type: "line"}}
+		        };
+
+		        var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+		        chart.draw(data, options);
+		      }
+		      google.setOnLoadCallback(drawVisualization);
+		    </script>
+		  </head>
+		  <body>
+		    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+		  </body>
+	</div>
+	
+	<!-- METHODOLOGY SECTION (WHAT IS METHOD + DOWNLOAD RAW DATA BUTTON)-->	
+	
+
+	<!-- WHAT DOES THIS MEAN SECTION -->
+	
+
+	<!-- LAW AND CONSEQUENCES SECTION -->
+	
+		
+	<!-- FOOTER SECTION -->
+	<footer>
+		
+	</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
