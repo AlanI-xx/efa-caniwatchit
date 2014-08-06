@@ -1,30 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<!-- GENERAL METADATA -->
+	<title>Can I Watch It?</title> 
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Electronic Frontiers Australia">
-	<meta name="description" content="A comparison of the availability of top Australian films">
-	<meta name="keywords" content="EFA, EFF, Electronic Frontiers Australia, Electronic Frontiers Australia, piracy, ">
-    <link rel="shortcut icon" href="ico/favicon.png">
+	<meta name="description" content="Can Australians legally download any of the most-pirated films this week?">
 
-    <title>Australian Piracy</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
 	
-	 <!-- ZOE CUSTOM STYLE -->
-    <link href="css/style.css" rel="stylesheet">
-    
-    <script src="/js/jquery.min.js"></script>
-    
+	<!-- OPEN GRAPH DATA -->
+	<meta property="og:title" content="Can I Watch It?" /> 
+	<meta property="og:type" content="website" /> 
+	<meta property="og:url" content=" http://www.example.com/" />
+	<meta property="og:image" content="img/opengraph.jpg" />
+	<meta property="og:description" content="Can Australians legally download any of the most-pirated films this week?" /> 
+	<meta property="og:site_name" content="Can I Watch It?" /> 
+	
+	<!-- TWITTER -->
+	<meta name="twitter:card" content="summary_large_image"> 
+	<meta name="twitter:site" content="@efa_oz"> 
+	<meta name="twitter:title" content="Can I Watch It?"> 
+	<meta name="twitter:description" content="Can Australians legally download any of the most-pirated films this week?"> 
+	<meta name="twitter:creator" content="@efa_oz"> 
+	<!-- Twitter summary card with large image must be at least 280x150px --> 
+	<meta name="twitter:image:src" content="img/twitter.jpg">
+	
+	<!-- GOOGLE+ -->
+	<meta itemprop="name" content="Can I Watch It?"> 
+	<meta itemprop="description" content="Can Australians legally download any of the most-pirated films this week?"> 
+	<meta itemprop="image" content="img/opengraph.jpg">
+	
+	<!-- PIWIK ANALYTICS -->
+	<script type="text/javascript">
+	  var _paq = _paq || [];
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+	    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://stats.efa.org.au/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', 2]);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+	    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+
+	</script>
+	<noscript><p><img src="https://stats.efa.org.au/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
+	
+	<!-- CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+	<!-- JS AND JQUERY -->
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+		
   </head>
 
 		
@@ -39,15 +78,15 @@
 
       <header class="jumbotron">
 		  <div class="container">
-        <h1>Australian Piracy</h1>
+        <h1>Can I Watch It?</h1>
         <h2 class="lead">Are the top 10 most pirated movies available for legal digital rental or purchase in Australia?</h2>
       </div>
-  </div>
+  </header>
 
     </div>
 	
 	
-  	</div>
+  	
 	
 	<!-- BODY -->
     <div class="container">
@@ -55,7 +94,10 @@
       <div>
 		<br>
 		<p>We know that Australian theatrical, DVD and VOD releases <a href="http://www.theguardian.com/news/datablog/2014/jun/30/australian-delayed-release-18-days" target="_blank">lag behind the rest of the world by as much as months</a>. Australians aren't reluctant to pay for content - a Pocketbook study found that despite the fact that it is actively geoblocked in Australia, <a href="https://getpocketbook.com/blog/netflix-australia-2-stats-scare-local-players/" target="_blank">Nexflix is the second most popular paid-content media company in Australia</a>.</p>
+		<br>
 		<p>With a desire to keep up with the rest of the world and a willingness to pay for it, are there legal digital alternatives to movie piracy in Australia?</p>
+		<br>
+		<p>If you like what we're doing, please consider <a href="https://www.efa.org.au/donate" target="_blank">donating</a>.</p>
 		<br>
       </div>
 	
@@ -194,14 +236,24 @@
 			</ul>
 		
 		<p>We have deliberately discounted services like <a href="http://www.fetchtv.com.au/" target="_blank">Fetch TV</a> that require special hardware like topboxes or gaming devices. We've also had to discount services like <a href="https://mubi.com/" target="_blank">Mubi</a> and <a href="https://www.foxtel.com.au/foxtelplay/" target="_blank">Foxtel Play</a> because you must be a member to search their selection.</p>
-		<p>If you think we are missing a service, please let us know at ___________.</p>
 	  <br>
   	</div>
 	
+	<!-- divider -->
+	<div class="aligncenter" style="width:100%;height:0;border-top:2px dashed #666;font-size:0;">-</div>
+	<br>
 	  
 	<!-- FOOTER -->
 <footer class="container">
-        <span class="muted credit"><strong>Australian Piracy</strong> was made by <a href="https://www.zoeelysiabrown.com" target="_blank">Zoe Elysia Brown</a> on behalf of <a href="https://www.efa.org.au" target="_blank">Electronic Frontiers Australia</a></span>
+        <span class="muted credit"><strong>Can I Watch It?</strong> was made by <a href="https://www.zoeelysiabrown.com" target="_blank">Zoe Elysia Brown</a> on behalf of <a href="https://www.efa.org.au" target="_blank">Electronic Frontiers Australia</a></span>
+		<br>
+		<br>
+		<span class="muted credit">Electronic Frontiers Australia Inc. ABN 35 050 159 188</span>
+		<br>
+		<span class="muted credit"><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="img/cc-by-2.5-au.png" alt="Creative Commons Licence"/></a></span>
+		<br>
+		<span class="muted credit"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Copyright Notice</a> © 1995 - 2014 Electronic Frontiers Australia Inc. </span>
+		
     </footer>
 	<br>
 	

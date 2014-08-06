@@ -26,14 +26,14 @@ thead {
 }
 
 .stats .percentage {
-	font-size: 60pt;
+	font-size: 50pt;
 	color: #0066cc;
 }
 
 h1 {
 	color: white!important;
 	text-transform: lowercase;
-	font-size: 45pt!important;
+	font-size: 70px!important;
 }
 
 h2 {
@@ -51,6 +51,10 @@ h4 {
 	text-transform: uppercase;
 }
 
+.lead {
+	font-size: 20px;
+}
+
 a {
 	color: #0066cc;
 }
@@ -60,6 +64,7 @@ body {
 	margin: 0;
 	display: block;
 	width: 100%;
+	font-size: 16px;
 }
 
 html {
